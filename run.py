@@ -14,4 +14,4 @@ application.register_blueprint(auth_api, url_prefix='/api')
 application.register_blueprint(dashboard_bp, url_prefix='/dashboard')
 
 if __name__ == "__main__":
-    application.run(debug=True, port='0.0.0.0')
+    application.run(debug=True, host='0.0.0.0')
