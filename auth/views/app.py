@@ -12,4 +12,4 @@ auth_api = Blueprint('auth', __name__)
 
 @auth_api.route('/home')
 def home():
-    return jsonify({"message": "welcome flask dev, now it is automated"})
+    return jsonify({"message": "welcome flask dev, now it is automated deployment process"})
