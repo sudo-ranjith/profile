@@ -5,13 +5,18 @@ Created by sudo-ranjith at 11/04/20
 Scenario: # this is the run.py which will trigger the flask application
 """
 
-from flask import Flask
+from flask import Flask, render_template
 from auth.views.app import auth_api
-from dashboard.views.routes import dashboard_bp
+# from dashboard.views.routes import dashboard_bp
 
-application = Flask(__name__)
-application.register_blueprint(auth_api, url_prefix='/api')
-application.register_blueprint(dashboard_bp, url_prefix='/dashboard')
+app = Flask(__name__)
+app.register_blueprint(auth_api, url_prefix='/api')
+# app.register_blueprint(dashboard_bp, url_prefix='/dashboard')
+
+@app.route('/')
+@app.route('/profile')
+def home():
+    return render_template("index.html")
 
 if __name__ == "__main__":
-    application.run(debug=True, host='0.0.0.0')
+    app.run(debug=True, host='0.0.0.0')
