@@ -18,5 +18,15 @@ app.register_blueprint(auth_api, url_prefix='/api')
 def home():
     return render_template("index.html")
 
+
+@app.route('/test_bot')
+def with_bot():
+    return render_template("index_bot.html")
+
+
+@app.route('/chatbot')
+def chatbot():
+    return render_template("chatbot.html")
+
 if __name__ == "__main__":
     app.run(debug=True, host='0.0.0.0')
