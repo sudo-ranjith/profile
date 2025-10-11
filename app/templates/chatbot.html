@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Chatbot Demo</h1>
+<div id="chatbox">
+    <textarea id="userInput" placeholder="Ask about me..."></textarea>
+    <button onclick="sendMessage()">Send</button>
+    <div id="chatLog"></div>
+</div>
+{% endblock %}

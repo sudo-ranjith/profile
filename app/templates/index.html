@@ -1,0 +1,364 @@
+{% extends "base.html" %}
+{% block content %}
+
+<!-- HERO -->
+<section class="py-20  ">
+    
+  <div class="container mx-auto flex flex-col md:flex-row items-center justify-between px-6">
+
+    <!-- LEFT: Info -->
+    <div class="md:w-1/2 text-center md:text-left mb-10 md:mb-0">
+      <h1 class="text-5xl font-bold mb-4 text-black">Hi, I'm Ranjith</h1>
+      <p class="text-xl mb-6 text-black">AI Engineer | Backend | GenAI | MLOps</p>
+      <div class="space-x-4">
+        <a href="#projects" class="bg-yellow-400 text-black px-6 py-3 rounded shadow hover:bg-yellow-300 text-black">See Projects</a>
+        <a href="#resume" class="bg-white text-indigo-700 px-6 py-3 rounded shadow hover:bg-gray-200 text-black">Download Resume</a>
+      </div>
+    </div>
+
+<!-- Profile with Morphing Blob -->
+<div class="md:w-1/2 relative flex justify-center">
+  <div class="gooey"></div>
+  <img src="/static/img/profile.png"
+       alt="Ranjith Profile"
+       class="relative w-72 h-72 rounded-full border-4 border-white shadow-xl object-cover object-top">
+</div>
+
+  </div>
+</section>
+
+   
+<!-- ABOUT -->
+<section id="about" class="py-16 container mx-auto px-6">
+  <h2 class="text-3xl font-bold mb-6 text-center">About Me</h2>
+  <p class="text-lg max-w-3xl mx-auto text-center">
+    AI Engineer with <b>6+ years of experience</b> in Python, backend systems, and data pipelines —
+    now focused on <b>GenAI, RAG systems, and MLOps</b>. Skilled in designing scalable APIs,
+    cloud-native AI solutions, and automation workflows on AWS. Awarded
+    <i>"Distinct Contributor"</i> for outstanding performance at Happiest Minds.
+  </p>
+</section>
+
+<!-- TIMELINE -->
+<section id="timeline" class="py-16 container mx-auto px-6">
+  <h2 class="text-3xl font-bold mb-12 text-center">My Journey</h2>
+
+  <div class="relative">
+    <!-- Vertical line -->
+    <div class="absolute left-1/2 transform -translate-x-1/2 h-full border-l-4 border-indigo-600"></div>
+
+    <div class="space-y-16">
+
+      <!-- Happiest Minds -->
+      <div class="relative flex items-center w-full">
+        <div class="w-1/2 pr-8 text-right">
+          <div class="bg-white p-6 shadow rounded">
+            <h3 class="text-xl font-bold">💼 Senior Software Engineer</h3>
+            <p class="text-gray-600 text-sm">Dec 2022 – Present</p>
+            <p class="text-gray-700">Happiest Minds | Bengaluru</p>
+            <ul class="list-disc list-inside text-sm text-gray-700 mt-2">
+              <li>Built REST APIs with Flask & FastAPI</li>
+              <li>Developed AWS Lambda for energy monitoring</li>
+              <li>Optimized ETL pipelines with AWS EC2 + S3</li>
+              <li>Awarded <b>"Distinct Contributor"</b></li>
+            </ul>
+          </div>
+        </div>
+        <div class="absolute left-1/2 transform -translate-x-1/2">
+          <div class="w-6 h-6 bg-indigo-600 rounded-full border-4 border-white"></div>
+        </div>
+        <div class="w-1/2"></div>
+      </div>
+
+      <!-- Brillersys -->
+      <div class="relative flex items-center w-full">
+        <div class="w-1/2"></div>
+        <div class="absolute left-1/2 transform -translate-x-1/2">
+          <div class="w-6 h-6 bg-indigo-600 rounded-full border-4 border-white"></div>
+        </div>
+        <div class="w-1/2 pl-8 text-left">
+          <div class="bg-white p-6 shadow rounded">
+            <h3 class="text-xl font-bold">💼 Software Engineer Consultant</h3>
+            <p class="text-gray-600 text-sm">Mar 2020 – Dec 2022</p>
+            <p class="text-gray-700">Brillersys | Coimbatore</p>
+            <ul class="list-disc list-inside text-sm text-gray-700 mt-2">
+              <li>Built REST APIs with Flask, SQL Server & PostgreSQL</li>
+              <li>Developed ETL pipelines in Python</li>
+              <li>Implemented ELK Stack for log analytics</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Datinfi -->
+      <div class="relative flex items-center w-full">
+        <div class="w-1/2 pr-8 text-right">
+          <div class="bg-white p-6 shadow rounded">
+            <h3 class="text-xl font-bold">💼 Junior Product Dev Engineer</h3>
+            <p class="text-gray-600 text-sm">Dec 2018 – Jan 2020</p>
+            <p class="text-gray-700">Datinfi Pvt. Ltd. | Coimbatore</p>
+            <ul class="list-disc list-inside text-sm text-gray-700 mt-2">
+              <li>Developed REST APIs with Flask & MongoDB</li>
+              <li>Automated testing with Selenium</li>
+              <li>Scraped e-commerce data with Scrapy</li>
+            </ul>
+          </div>
+        </div>
+        <div class="absolute left-1/2 transform -translate-x-1/2">
+          <div class="w-6 h-6 bg-indigo-600 rounded-full border-4 border-white"></div>
+        </div>
+        <div class="w-1/2"></div>
+      </div>
+
+      <!-- MCA -->
+      <div class="relative flex items-center w-full">
+        <div class="w-1/2"></div>
+        <div class="absolute left-1/2 transform -translate-x-1/2">
+          <div class="w-6 h-6 bg-indigo-600 rounded-full border-4 border-white"></div>
+        </div>
+        <div class="w-1/2 pl-8 text-left">
+          <div class="bg-white p-6 shadow rounded">
+            <h3 class="text-xl font-bold">🎓 MCA</h3>
+            <p class="text-gray-600 text-sm">2016 – 2018</p>
+            <p class="text-gray-700">Professional Group of Institutions, Tirupur</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- B.Sc. IT -->
+      <div class="relative flex items-center w-full">
+        <div class="w-1/2 pr-8 text-right">
+          <div class="bg-white p-6 shadow rounded">
+            <h3 class="text-xl font-bold">🎓 B.Sc. IT</h3>
+            <p class="text-gray-600 text-sm">2013 – 2016</p>
+            <p class="text-gray-700">Parks College, Tirupur</p>
+          </div>
+        </div>
+        <div class="absolute left-1/2 transform -translate-x-1/2">
+          <div class="w-6 h-6 bg-indigo-600 rounded-full border-4 border-white "></div>
+        </div>
+        <div class="w-1/2"></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- SKILLS -->
+<section id="skills" class="py-16 container mx-auto px-6">
+  <h2 class="text-3xl font-bold mb-12 text-center">Skills</h2>
+
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+    <!-- AI/ML & GenAI -->
+    <div class="bg-white p-6 shadow rounded transition transform hover:-translate-y-2 hover:shadow-xl duration-300">
+      <h3 class="text-xl font-bold mb-4 flex items-center text-indigo-600">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/>
+        </svg>
+        AI & Machine Learning
+      </h3>
+      <ul class="space-y-2">
+        <li class="flex items-center">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" class="w-6 h-6 mr-2"/> Python, Pandas, Numpy
+        </li>
+        <li class="flex items-center">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" class="w-6 h-6 mr-2"/> PyTorch, TensorFlow, Keras
+        </li>
+        <li class="flex items-center">
+          <img src="https://img.icons8.com/external-flat-juicy-fish/60/external-ai-artificial-intelligence-flat-flat-juicy-fish.png" class="w-6 h-6 mr-2"/> Machine Learning, Deep Learning, NLP
+        </li>
+        <li class="flex items-center">
+          <img src="https://img.icons8.com/?size=100&id=61466&format=png&color=000000" class="w-6 h-6 mr-2"/> GenAI, Agentic AI
+        </li>
+        <li class="flex items-center">
+          <img src="https://img.icons8.com/color/48/artificial-intelligence.png" class="w-6 h-6 mr-2"/> LangChain, LangGraph
+        </li>
+      </ul>
+    </div>
+
+    <!-- AWS & Cloud -->
+    <div class="bg-white p-6 shadow rounded transition transform hover:-translate-y-2 hover:shadow-xl duration-300">
+      <h3 class="text-xl font-bold mb-4 flex items-center text-indigo-600">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v4a1 1 0 001 1h3m10 0h3a1 1 0 001-1V7m-5 10v4m0-4a1 1 0 011-1h2m-6 0h2m-6 0h2m-6 0h2m-6 0h2"/>
+        </svg>
+        AWS & Cloud
+      </h3>
+      <ul class="space-y-2">
+        <li class="flex items-center">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg" class="w-6 h-6 mr-2"/> EC2, S3, RDS, DynamoDB
+        </li>
+        <li class="flex items-center">
+          <img src="https://img.icons8.com/color/48/amazon-lambda.png" class="w-6 h-6 mr-2"/> AWS Lambda, API Gateway
+        </li>
+        <li class="flex items-center">
+          <img src="https://img.icons8.com/fluency/48/artificial-intelligence.png" class="w-6 h-6 mr-2"/> Bedrock, SageMaker
+        </li>
+        <li class="flex items-center">
+          <img src="https://img.icons8.com/color/48/cloud.png" class="w-6 h-6 mr-2"/> CloudWatch, VPC, Subnets
+        </li>
+        <li class="flex items-center">
+          <img src="https://img.icons8.com/ios-filled/50/lock--v1.png" class="w-6 h-6 mr-2"/> IAM, Vault, Security Groups
+        </li>
+      </ul>
+    </div>
+
+    <!-- Programming & Tools -->
+    <div class="bg-white p-6 shadow rounded transition transform hover:-translate-y-2 hover:shadow-xl duration-300">
+      <h3 class="text-xl font-bold mb-4 flex items-center text-indigo-600">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6h13M9 6l-6 6 6 6"/>
+        </svg>
+        Programming & Tools
+      </h3>
+      <ul class="space-y-2">
+        <li class="flex items-center">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" class="w-6 h-6 mr-2"/> Flask, FastAPI
+        </li>
+        <li class="flex items-center">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" class="w-6 h-6 mr-2"/> PostgreSQL
+        </li>
+        <li class="flex items-center">
+          <img src="https://img.icons8.com/ios-glyphs/30/workflow.png" class="w-6 h-6 mr-2"/> ETL Pipelines, Data Automation
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="py-16 container mx-auto px-6" x-data="{ tab: 'ml' }">
+  <h2 class="text-3xl font-bold mb-12 text-center">FinTech & Banking Projects</h2>
+
+  <!-- Category Tabs -->
+  <div class="flex justify-center space-x-4 mb-10">
+    <button @click="tab = 'ml'" :class="tab === 'ml' ? 'bg-indigo-600 text-white' : 'bg-gray-200 text-gray-800'" class="px-4 py-2 rounded">Machine Learning</button>
+    <button @click="tab = 'dl'" :class="tab === 'dl' ? 'bg-indigo-600 text-white' : 'bg-gray-200 text-gray-800'" class="px-4 py-2 rounded">Deep Learning</button>
+    <button @click="tab = 'nlp'" :class="tab === 'nlp' ? 'bg-indigo-600 text-white' : 'bg-gray-200 text-gray-800'" class="px-4 py-2 rounded">NLP</button>
+    <button @click="tab = 'genai'" :class="tab === 'genai' ? 'bg-indigo-600 text-white' : 'bg-gray-200 text-gray-800'" class="px-4 py-2 rounded">Generative AI</button>
+    <!-- <button @click="tab = 'agentic'" :class="tab === 'agentic' ? 'bg-indigo-600 text-white' : 'bg-gray-200 text-gray-800'" class="px-4 py-2 rounded">Agentic AI</button> -->
+  </div>
+
+  <!-- Projects Grid -->
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+    <!-- ML Projects -->
+    <div x-show="tab === 'ml'" class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300">
+      <h3 class="text-xl font-bold text-indigo-700 mb-2">Credit Risk Scoring System</h3>
+      <p class="text-gray-700 mb-3">ML model predicting loan default probability from financial & demographic data.</p>
+      <p class="text-sm text-gray-600"><b>Tech:</b> Python, Scikit-learn, Pandas, SQL</p>
+      <p class="text-sm text-gray-600"><b>Challenges:</b> Imbalanced datasets, explainability</p>
+      <p class="text-sm text-gray-600"><b>Next:</b> Feature drift monitoring, credit bureau APIs</p>
+      <a href="#" class="inline-block mt-3 text-indigo-600 font-medium hover:underline">Demo Link →</a>
+    </div>
+
+    <div x-show="tab === 'ml'" class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300">
+      <h3 class="text-xl font-bold text-indigo-700 mb-2">Customer Lifetime Value Prediction</h3>
+      <p class="text-gray-700 mb-3">Regression-based ML for long-term revenue forecasting of customers.</p>
+      <p class="text-sm text-gray-600"><b>Tech:</b> Python, XGBoost, Power BI</p>
+      <p class="text-sm text-gray-600"><b>Challenges:</b> Sparse data, new customer forecasting</p>
+      <p class="text-sm text-gray-600"><b>Next:</b> Deep learning time-series, CRM integration</p>
+      <a href="#" class="inline-block mt-3 text-indigo-600 font-medium hover:underline">Demo Link →</a>
+    </div>
+
+    <!-- DL Projects -->
+    <div x-show="tab === 'dl'" class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300">
+      <h3 class="text-xl font-bold text-indigo-700 mb-2">Fraud Transaction Detection</h3>
+      <p class="text-gray-700 mb-3">Real-time fraud detection system using deep learning anomaly detection.</p>
+      <p class="text-sm text-gray-600"><b>Tech:</b> Python, TensorFlow/PyTorch, Kafka</p>
+      <p class="text-sm text-gray-600"><b>Challenges:</b> Rare fraud patterns, low latency detection</p>
+      <p class="text-sm text-gray-600"><b>Next:</b> Graph neural networks for fraud networks</p>
+      <a href="#" class="inline-block mt-3 text-indigo-600 font-medium hover:underline">Demo Link →</a>
+    </div>
+
+    <div x-show="tab === 'dl'" class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300">
+      <h3 class="text-xl font-bold text-indigo-700 mb-2">Document OCR & Verification</h3>
+      <p class="text-gray-700 mb-3">OCR pipeline to validate cheques, ID proofs, and KYC docs.</p>
+      <p class="text-sm text-gray-600"><b>Tech:</b> Python, OpenCV, PyTorch, FastAPI</p>
+      <p class="text-sm text-gray-600"><b>Challenges:</b> Low-quality scans, accuracy across formats</p>
+      <p class="text-sm text-gray-600"><b>Next:</b> Multilingual OCR, Transformer-based models</p>
+      <a href="#" class="inline-block mt-3 text-indigo-600 font-medium hover:underline">Demo Link →</a>
+    </div>
+
+    <!-- NLP Projects -->
+    <div x-show="tab === 'nlp'" class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300">
+      <h3 class="text-xl font-bold text-indigo-700 mb-2">Customer Support Chatbot</h3>
+      <p class="text-gray-700 mb-3">NLP chatbot automating banking queries like balance inquiry & loan status.</p>
+      <p class="text-sm text-gray-600"><b>Tech:</b> Hugging Face, Rasa, FastAPI</p>
+      <p class="text-sm text-gray-600"><b>Challenges:</b> Domain-specific financial terminology</p>
+      <p class="text-sm text-gray-600"><b>Next:</b> Voice queries, multilingual support</p>
+      <a href="#" class="inline-block mt-3 text-indigo-600 font-medium hover:underline">Demo Link →</a>
+    </div>
+
+    <div x-show="tab === 'nlp'" class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300">
+      <h3 class="text-xl font-bold text-indigo-700 mb-2">Financial News Sentiment Analysis</h3>
+      <p class="text-gray-700 mb-3">Classifies financial news as positive, negative, or neutral for trading.</p>
+      <p class="text-sm text-gray-600"><b>Tech:</b> Transformers, NLTK, Pandas</p>
+      <p class="text-sm text-gray-600"><b>Challenges:</b> Sarcasm, dataset labeling</p>
+      <p class="text-sm text-gray-600"><b>Next:</b> Twitter/X feeds, trading bot integration</p>
+      <a href="#" class="inline-block mt-3 text-indigo-600 font-medium hover:underline">Demo Link →</a>
+    </div>
+
+    <!-- GenAI Projects -->
+    <div x-show="tab === 'genai'" class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300">
+      <h3 class="text-xl font-bold text-indigo-700 mb-2">RAG-based Banking Document Assistant</h3>
+      <p class="text-gray-700 mb-3">GenAI RAG system for compliance, KYC, and policy-related queries.</p>
+      <p class="text-sm text-gray-600"><b>Tech:</b> LangChain, LLMs, FAISS</p>
+      <p class="text-sm text-gray-600"><b>Challenges:</b> Financial jargon embeddings</p>
+      <p class="text-sm text-gray-600"><b>Next:</b> Conversational memory, system integration</p>
+      <a href="#" class="inline-block mt-3 text-indigo-600 font-medium hover:underline">Demo Link →</a>
+    </div>
+
+    <div x-show="tab === 'genai'" class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300">
+     <!-- <div x-show="tab === 'agentic'" class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300"> -->
+      <h3 class="text-xl font-bold text-indigo-700 mb-2">AI Dividend Screener Agent</h3>
+      <p class="text-gray-700 mb-3">Agentic AI recommending dividend stocks for investors.</p>
+      <p class="text-sm text-gray-600"><b>Tech:</b> LangChain Agents, OpenAI, yFinance</p>
+      <p class="text-sm text-gray-600"><b>Challenges:</b> Real-time stock data, balancing strategies</p>
+      <p class="text-sm text-gray-600"><b>Next:</b> Portfolio optimization, predictive analytics</p>
+      <a href="#" class="inline-block mt-3 text-indigo-600 font-medium hover:underline">Demo Link →</a>
+    </div>
+
+    
+    <!-- Agentic Projects -->
+    <!-- <div x-show="tab === 'agentic'" class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300">
+        <h3 class="text-xl font-bold text-indigo-700 mb-2">Fraud Investigation AI Agent</h3>
+        <p class="text-gray-700 mb-3">Multi-agent system analyzing suspicious transactions with explainability.</p>
+        <p class="text-sm text-gray-600"><b>Tech:</b> LangChain Agents, Neo4j, FastAPI</p>
+        <p class="text-sm text-gray-600"><b>Challenges:</b> Complex fraud networks, reasoning</p>
+        <p class="text-sm text-gray-600"><b>Next:</b> Graph neural networks, proactive alerts</p>
+        <a href="#" class="inline-block mt-3 text-indigo-600 font-medium hover:underline">Demo Link →</a>
+    </div> -->
+    
+    <!-- <div x-show="tab === 'genai'" class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300">
+      <h3 class="text-xl font-bold text-indigo-700 mb-2">Loan Agreement Summarizer</h3>
+      <p class="text-gray-700 mb-3">GenAI tool converting loan agreements into concise summaries.</p>
+      <p class="text-sm text-gray-600"><b>Tech:</b> Hugging Face, LangChain, FastAPI</p>
+      <p class="text-sm text-gray-600"><b>Challenges:</b> Legal accuracy in summarization</p>
+      <p class="text-sm text-gray-600"><b>Next:</b> Multi-language support, compliance fine-tuning</p>
+      <a href="#" class="inline-block mt-3 text-indigo-600 font-medium hover:underline">Demo Link →</a>
+    </div> -->
+   
+
+  </div>
+</section>
+
+
+<!-- RESUME -->
+<section id="resume" class="py-16 bg-gray-100 text-center">
+  <h2 class="text-3xl font-bold mb-4">📄 Resume</h2>
+  
+  <a href="/static/resume/Ranjith_6_Yrs_Python_Datascience.pdf" 
+     download="Ranjith_6_Yrs_Python_AI_Engineer.pdf"
+     class="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-lg shadow-md inline-block">
+     Download Resume
+  </a>
+</section>
+
+
+
+{% endblock %}
+
