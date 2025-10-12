@@ -1,16 +1,23 @@
+import uvicorn
 from fastapi import FastAPI, Request
 from fastapi.responses import HTMLResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 import os
+from pathlib import Path
 
 app = FastAPI(title="Ranjith Portfolio")
 
-# Static files (CSS, JS, images)
-app.mount("/static", StaticFiles(directory="app/static"), name="static")
 
-# Templates folder
-templates = Jinja2Templates(directory="app/templates")
+BASE_DIR = Path(__file__).resolve().parent
+
+app.mount(
+    "/static",
+    StaticFiles(directory=BASE_DIR / "static"),
+    name="static"
+)
+
+templates = Jinja2Templates(directory=BASE_DIR / "templates")
 
 
 @app.get("/", response_class=HTMLResponse)
@@ -38,7 +45,6 @@ async def resume_page(request: Request):
 
 
 if __name__ == "__main__":
-    import uvicorn
 
     port = int(os.environ.get("PORT", 8000))
     uvicorn.run(app, port=port)
