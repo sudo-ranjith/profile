@@ -6,7 +6,7 @@ from fastapi.templating import Jinja2Templates
 import os
 from pathlib import Path
 
-app = FastAPI(title="Ranjith Portfolio")
+app = FastAPI(title="Ranjith AI Engineer Portfolio")
 
 
 BASE_DIR = Path(__file__).resolve().parent
